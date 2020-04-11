@@ -8,8 +8,8 @@
 cmap = autumn(2);
 
 % Generating points
-Xplot = linspace(0, 5,150)'; 
-Yplot = linspace(0, 5,150)'; 
+Xplot = linspace(0, 5,700)'; 
+Yplot = linspace(0, 5,700)'; 
 
 % Obtain the grid vectors for the two dimensions 
 [Xv, Yv] = meshgrid(Xplot, Yplot); 
@@ -25,7 +25,7 @@ figure; % This function will draw the decision boundaries
 [CC,h] = contourf(Xplot(:), Yplot(:), reshape(classes, length(Xplot ), length(Yplot))); 
 set(h,'LineColor','none'); 
 colormap(cmap);
-
+saveas(gcf,'t2_regions_hNN_A.pdf');
 
 
 
