@@ -8,8 +8,8 @@
 cmap = autumn(2);
 
 % Generating points
-Xplot = linspace(0, 5,700)'; 
-Yplot = linspace(0, 5,700)'; 
+Xplot = linspace(0, 5,200)'; 
+Yplot = linspace(0, 5,200)'; 
 
 % Obtain the grid vectors for the two dimensions 
 [Xv, Yv] = meshgrid(Xplot, Yplot); 
