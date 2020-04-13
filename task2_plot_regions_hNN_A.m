@@ -25,6 +25,9 @@ figure; % This function will draw the decision boundaries
 [CC,h] = contourf(Xplot(:), Yplot(:), reshape(classes, length(Xplot ), length(Yplot))); 
 set(h,'LineColor','none'); 
 colormap(cmap);
+title('Decision Regions for Task 2.5');
+xlabel('X');
+ylabel('Y');
 saveas(gcf,'t2_regions_hNN_A.pdf');
 
 
